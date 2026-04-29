@@ -3,7 +3,7 @@ import re
 import json
 from pathlib import Path
 
-html_file = Path("data/your-wiki.html")      # ← put your .html here
+html_file = Path("data/example mgsd.htm")      # ← put your .html here
 out_dir = Path("data/tiddlers")
 out_dir.mkdir(exist_ok=True)
 
