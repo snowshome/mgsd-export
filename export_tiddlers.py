@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 from pathlib import Path
 
-html_file = Path("data/export mgsd.htm")   # ← CHANGE to your exact filename
+html_file = Path("data/example mgsd.htm")   # ← CHANGE to your exact filename
 out_dir = Path("data/tiddlers")
 out_dir.mkdir(exist_ok=True)
 
