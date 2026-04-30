@@ -1,0 +1,41 @@
+---
+title: Starred Projects Dashboard by Area
+tags: View excludeSearch
+created: 201003270648
+modified: 201111130929
+---
+
+{{cols2{
+
+{{col{
+
+<<mgtdList title:'Active Starrred Prooojects' startTag:Project tags:'Active && Starred && !Complete' view:Project mode:global
+	group:Area
+	gView:bold
+	newButtonTags:'Project Active'
+	>>
+
+}}}
+
+{{col{
+
+<<mgtdList title:'Someday/Maybe Projects' startTag:Project tags:'Someday/Maybe && !Complete' view:Project mode:global
+	group:Area
+	gView:bold
+	newButtonTags:'Project Someday/Maybe'
+	>>
+
+{{scroll10{
+<<mgtdList title:'Completed Projects' startTag:Project tags:'Complete' view:ProjectComplete mode:global
+	group:Area
+	gView:bold
+	newButtonTags:'Project Active Complete'
+	>>
+
+}}}
+
+}}}
+
+
+}}}
+

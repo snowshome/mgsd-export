@@ -1,0 +1,32 @@
+---
+title: Projects Dashboard
+tags: View excludeSearch
+created: 201003270648
+modified: 201111130929
+---
+
+{{cols2{
+
+{{col{
+
+<<mgtdList title:'Active Projects' startTag:Project tags:'Active && !Complete' view:ProjectArea mode:global
+	newButtonTags:'Project Active'
+	>>
+
+}}}
+
+{{col{
+
+<<mgtdList title:'Someday/Maybe Projects' startTag:Project tags:'Someday/Maybe && !Complete' view:ProjectArea mode:global
+	newButtonTags:'Project Someday/Maybe'
+	>>
+
+
+{{scroll10{
+<<mgtdList title:'Completed Projects' startTag:Project tags:'Complete' view:ProjectComplete mode:global>>
+}}}
+
+}}}
+
+}}}
+

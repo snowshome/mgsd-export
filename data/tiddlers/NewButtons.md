@@ -1,0 +1,16 @@
+---
+title: NewButtons
+tags: excludeSearch
+created: 201003270648
+modified: 201111130929
+---
+
+<<newSavedTiddler title:'new Action' label:'+ action' tag:{{'Action Next [['+config.macros.mgtdList.getRealm()+']]'}}>>
+<<newSavedTiddler title:'new Project' label:'+ project' tag:{{'Project Active [['+config.macros.mgtdList.getRealm()+']]'}}>>
+/%<<newSavedTiddler title:'new Tickler' label:'+ tickler' tag:{{'Tickler Once [['+config.macros.mgtdList.getRealm()+']]'}}>>
+%/<<calendarPopup '+ tickler' 'new Tickler'>>/% <-- experimental %/
+<<newSavedTiddler title:'new Reference Item' label:'+ reference' tag:{{'Reference [['+config.macros.mgtdList.getRealm()+']]'}}>>
+<slider quick add>
+<<processInbox>>
+</slider>
+

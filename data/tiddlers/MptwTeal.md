@@ -1,0 +1,24 @@
+---
+title: MptwTeal
+tags: systemPalette excludeSearch
+created: 201004041418
+modified: 201111130925
+---
+
+Name: MptwTeal
+Background: #fff
+Foreground: #000
+PrimaryPale: #B5D1DF
+PrimaryLight: #618FA9
+PrimaryMid: #1a3844
+PrimaryDark: #000
+SecondaryPale: #ffc
+SecondaryLight: #fe8
+SecondaryMid: #db4
+SecondaryDark: #841
+TertiaryPale: #f8f8f8
+TertiaryLight: #bbb
+TertiaryMid: #999
+TertiaryDark: #888
+Error: #f88
+

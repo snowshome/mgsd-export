@@ -1,0 +1,25 @@
+---
+title: MptwRed
+tags: systemPalette excludeSearch
+created: 201004041418
+modified: 201111130925
+---
+
+Name: MptwRed
+Background: #fff
+Foreground: #000
+PrimaryPale: #eaa
+PrimaryLight: #c55
+PrimaryMid: #711
+PrimaryDark: #500
+SecondaryPale: #ffc
+SecondaryLight: #fe8
+SecondaryMid: #db4
+SecondaryDark: #841
+TertiaryPale: #eee
+TertiaryLight: #ccc
+TertiaryMid: #999
+TertiaryDark: #666
+Error: #f88
+
+

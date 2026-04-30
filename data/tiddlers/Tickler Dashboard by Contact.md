@@ -1,0 +1,64 @@
+---
+title: Tickler Dashboard by Contact
+tags: View excludeSearch
+created: 201009151153
+modified: 201111130929
+---
+
+{{cols2{
+
+{{col{
+
+
+<<mgtdList
+    title:'Ticklers Requiring Action Grouped'
+    startTag:Tickler
+    tags:'!Actioned'
+    view:Tickler
+    group:Contact
+    gView:bold
+    mode:global
+    newButtonTags:'Tickler Enabled Once'
+    where:'tiddler.ticklerIsActive()'
+    sort:'tickleDate'
+    dontShowEmpty:yes
+    ignoreRealm:{{config.mGTD.getOptChk('AlertsIgnoreRealm')?'yes':''}}
+>>
+
+<<mgtdList
+    title:'Upcoming Ticklers Grouped (next 7 days)'
+    startTag:Tickler
+    tags:'!Actioned'
+    view:Tickler
+    group:Contact
+    gView:bold
+    mode:global
+    newButtonTags:'Tickler Enabled Once'
+    where:'tiddler.ticklerWillBeActiveWithin(7)'
+    sort:'tickleDate'
+    ignoreRealm:{{config.mGTD.getOptChk('AlertsIgnoreRealm')?'yes':''}}
+>>
+
+}}}
+
+{{col{
+
+<<mgtdList
+    title:'Upcoming Ticklers Grouped'
+    startTag:Tickler
+    tags:'!Actioned'
+    view:Tickler
+    group:Contact
+    gView:bold
+    mode:global
+    newButtonTags:'Tickler Enabled Once'
+    where:'(!tiddler.fields.mgtd_date || !tiddler.ticklerIsActive()) && !tiddler.ticklerWillBeActiveWithin(7)'
+    sort:'tickleDate'
+    ignoreRealm:{{config.mGTD.getOptChk('AlertsIgnoreRealm')?'yes':''}}
+>>
+
+
+}}}
+
+}}}
+

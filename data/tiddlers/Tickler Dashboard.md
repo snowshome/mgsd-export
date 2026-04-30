@@ -1,0 +1,54 @@
+---
+title: Tickler Dashboard
+tags: View excludeSearch
+created: 201009151141
+modified: 201111130929
+---
+
+{{cols2{
+
+{{col{
+
+<<tiddler 'Ticklers Requiring Action'>>
+
+<<mgtdList title:'Upcoming Ticklers (next 7 days)'
+       startTag:Tickler
+       tags:'!Actioned'
+       view:Tickler
+       mode:global
+       newButtonTags:'Tickler Once'
+       where:'tiddler.ticklerWillBeActiveWithin(7)'
+       sort:'tickleDate'
+       dontShowEmpty:yes
+       ignoreRealm:{{config.mGTD.getOptChk('AlertsIgnoreRealm')?'yes':''}}
+>>
+
+<<mgtdList title:'Upcoming Ticklers'
+	startTag:Tickler
+	tags:'!Actioned'
+	view:Tickler
+	mode:global
+	newButtonTags:'Tickler Once'
+    where:'(!tiddler.fields.mgtd_date || !tiddler.ticklerIsActive()) && !tiddler.ticklerWillBeActiveWithin(7)'
+	sort:'tickleDate'
+	ignoreRealm:{{config.mGTD.getOptChk('AlertsIgnoreRealm')?'yes':''}}
+>>
+
+
+}}}
+
+{{col{
+
+<<mgtdList
+	title:'Old Ticklers'
+	startTag:Tickler
+	tags:'Actioned'
+	view:Tickler
+	mode:global
+	newButtonTags:'Tickler Actioned Once'
+>>
+
+}}}
+
+}}}
+

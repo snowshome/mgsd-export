@@ -1,0 +1,55 @@
+---
+title: Action Dashboard by Contact
+tags: View excludeSearch
+created: 201003270648
+modified: 201111130929
+---
+
+{{cols2{
+
+{{col{
+
+<<tiddler 'Ticklers Requiring Action'>>
+
+<<mgtdList title:'Next Actions' startTag:Action tags:'Next && !Done' view:Action mode:global
+	group:Contact
+	gView:bold
+	where:tiddler.hasActiveProject()
+	newButtonTags:'Action Next'
+	>>
+
+<<mgtdList title:'Waiting Actions' startTag:Action tags:'[(Waiting For)] && !Done' view:Action mode:global
+	group:Contact
+	gView:bold
+	where:tiddler.hasActiveProject()
+	newButtonTags:'Action [(Waiting For)]'
+	>>
+
+}}}
+
+{{col{
+
+<<mgtdList title:'Future Actions' startTag:Action tags:'Future && !Done' view:Action mode:global
+	group:Contact
+	gView:bold
+	where:tiddler.hasActiveProject()
+	newButtonTags:'Action Future'
+	>>
+
+
+{{scroll10{
+
+<<mgtdList title:'Done Actions' startTag:Action tags:'Done' view:DoneAction mode:global
+	group:Contact
+	gView:bold
+	sort:-modified
+	newButtonTags:'Action Next Done'
+	where:tiddler.hasActiveProject()
+	>>
+
+}}}
+
+}}}
+
+}}}
+

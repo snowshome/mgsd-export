@@ -1,0 +1,37 @@
+---
+title: MgtdSettings
+tags: excludeSearch AlertsIgnoreRealm MultipleContexts Personal
+created: 201006021131
+modified: 202604291304
+---
+
+!!Options
+Show tickler alerts regardless of realm settings.
+<<toggleTag AlertsIgnoreRealm MgtdSettings>>
+
+Actions can have multiple contexts. 
+<<toggleTag MultipleContexts MgtdSettings>>
+
+Show full area name next to actions in action lists instead of just [A].
+<<toggleTag FullAreaInActionLists MgtdSettings>>
+
+Show full project name next to actions in action lists instead of just [P].
+<<toggleTag FullProjectInActionLists MgtdSettings>>
+
+Show full contact name next to actions in action lists instead of just [C].
+<<toggleTag FullContactInActionLists MgtdSettings>>
+
+Week should start on Monday in calendar popups.
+<<toggleTag WeekStartsMonday MgtdSettings>>
+
+Enter the date format for ticklers.
+Tickler date format:<<mgtdEditField ticklerdateformat MgtdSettings>>
+(see [[Date Formats|http://tiddlywiki.org/wiki/Date_Formats]]) 
+
+Enter the date format for 'new journal'.
+Journal date format:<<mgtdEditField newjournaldateformat MgtdSettings>>
+(see [[Date Formats|http://tiddlywiki.org/wiki/Date_Formats]]) 
+
+Hour that ticklers should become active on their tickler date. (0 = Midnight, 12 = Midday)
+Tickler activate hour:<<mgtdEditField tickleractivatehour MgtdSettings>>
+
